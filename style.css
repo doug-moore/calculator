@@ -4,10 +4,48 @@ body {
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+
 }
 
+#display {
+    display: flex;
+    height: 15%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: end;
+    align-items: end;    
+    
+}
 
+#numbers {
+    margin: 0px;
+}
 
+#squareContainer {
+    display: flex;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: large;
+}
+
+#ac {
+    margin: 10px;
+}
